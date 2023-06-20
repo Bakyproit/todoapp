@@ -1,0 +1,41 @@
+.taskList {
+  margin: 0 20px;
+}
+.title {
+  font-size: 2rem;
+  color : blue ;
+  margin-bottom: 10px;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+.taskCheckBox {
+  width: 2rem;
+  height: 2rem;
+}
+.taskName {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: bold;
+  width: 20rem;
+  &.taskNameDone {
+    color: #b2b7bb;
+    text-decoration: line-through;
+  }
+}
+.taskActions {
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+.taskBtn{
+    width: 6rem;
+    margin-left: 1rem ;
+    font-size: 1.8rem;
+    border-radius: 0.7rem;
+    border: 1px solid #333;
+}
